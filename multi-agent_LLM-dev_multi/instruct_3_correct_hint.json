@@ -1,0 +1,10 @@
+{
+  "instructions": [
+    {
+      "id": 1,
+      "label": "Letter",
+      "comment": "Here is an example Deterministic Finite Automata (DFA) with four states '0', '1', '2', and '3'. Labels are 'a' and 'b' for instance if the label 'a' is true and the agent is in state '0' then it would go to state '1' or if the agent is in state '0' and the label 'b' becomes true then the next state is '3' so the format is (current state, label, next state). The example is: [general] is dfa = true; alphabet size = 3; number of states = 4; [initial states] 0; [final states] 3; [transitions]  0, a, 1;0, b, 0; 0, c, 0; 1, a, 1; 1, b, 2; 1, c, 1; 2, a, 2; 2, b, 2; 2, c, 3; 3, a, 3; 3, b, 3; 3, c, 3;. Meaning if none of the labels 'a' is not true ('!a') and the agent is in state '0' it will stay in state '0' or if agent is in state '0' and the label 'a' becomes true then the next state is '1' or if the agent is in state '1' and the label 'b' becomes true then the agent will got to state '2'. Once the agent reaches the final state, here in our example state '3', then it will stay in the final state ('3;a;3' or '3;b;3'). Now create a DFA step by step for a task where the agent's first objective is to go to intersection No.1 (label should become true) and then it should go straight at intersection No.2. Show the label for intersection No.1 with 'a', and for intersection No.2 with 'b'. Create the DFA step by step; however, only write the DFA, no explanation is needed."
+    }
+  ]
+}
+
